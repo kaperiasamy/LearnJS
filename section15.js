@@ -61,3 +61,21 @@ console.log(toyota.title); // "Toyota"
 console.log(toyota.color); // "red"
 console.log(toyota.drive()); // "vroom"
 console.log(toyota.honk()); // "beep beep"
+
+class Monster {
+    constructor(options) {
+        this.health = 100;
+        this.name = options.name;
+    }
+}
+
+
+
+class Snake extends Monster {
+    constructor(options) {
+        super(options);
+    }
+    bite(snake) {
+        snake.health -= 10;
+    }
+}
