@@ -13,10 +13,10 @@ const m2m = {
     lead: "Ashwin",
     engineer: "Harish",
     [Symbol.iterator]: function* () {
-    yield this.manager;
-    yield this.lead;
-    yield this.engineer;
-    yield* this.pns;
+        yield this.manager;
+        yield this.lead;
+        yield this.engineer;
+        yield* this.pns;
     }
 };
 /*
